@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from 'styled-components';
+import { SnackbarProvider } from 'notistack';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Header, Body, Footer, Wrapper } from './App.styled';
+import { theme } from "./styles/theme";
+
+
+const App: React.FC = () => {
+
+    return (
+        <SnackbarProvider maxSnack={3}>
+            <BrowserRouter>
+                <ThemeProvider theme={theme}>
+                    <Wrapper>
+                        <Header>
+                            Header Section
+                        </Header>
+                        <Body>
+                            This is the body content.
+                        </Body>
+                        <Footer>
+                            Footer Section
+                        </Footer>
+                    </Wrapper>
+                </ThemeProvider>
+            </BrowserRouter>
+        </SnackbarProvider>
+    );
+};
 
 export default App;

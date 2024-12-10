@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     height: 100vh; /* Full viewport height */
     font: black;
+    border: 1px solid blue;
 `;
 
 export const Header = styled.header`

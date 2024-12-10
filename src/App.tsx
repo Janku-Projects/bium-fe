@@ -10,7 +10,6 @@ import { store, persistor } from "./store/store";
 import { PersistGate } from "redux-persist/integration/react";
 import GlobalStyles from "./styles/globalStyles";
 import Layout from "./layouts/Layout";
-import BlankLayout from "./layouts/blankLayout";
 import RoutesGroup from "./routes/RoutesGroup";
 
 

@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Intro from "../pages/Home";
-import Login from "../pages/Login";
+import Intro from "@/pages/Home";
 
 const RoutesGroup = () => {
 
@@ -11,7 +10,7 @@ const RoutesGroup = () => {
     return (
         <Routes>
             <Route path={"/"} element={<Intro />}/>
-            <Route path={"/login"} element={<Login/>}/>
+            {/*<Route path={"/login"} element={<Login/>}/>*/}
 
         </Routes>
     );

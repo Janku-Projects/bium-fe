@@ -3,7 +3,6 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from 'styled-components';
 import { SnackbarProvider } from 'notistack';
 
-import { Header, Body, Footer, Wrapper } from './App.styled';
 import { theme } from "./styles/theme";
 import { Provider } from "react-redux";
 import { store, persistor } from "./store/store";

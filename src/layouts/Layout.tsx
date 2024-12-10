@@ -1,5 +1,5 @@
-import { Body, Footer, Header, Wrapper } from "../App.styled";
 import React, { FC, ReactNode } from "react";
+import { Body, Footer, Header, Wrapper } from "@/layouts/Layout.styled";
 
 interface layoutProps {
     children: ReactNode;
